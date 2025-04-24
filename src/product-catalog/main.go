@@ -198,7 +198,7 @@ func readProductFiles() ([]*pb.Product, error) {
 	}
 
 	// read the contents of each .json file and unmarshal into a ListProductsResponsesss
-	// then append the products to the catalog
+	// then append the products to the catalog hghf
 	var products []*pb.Product
 	for _, f := range jsonFiles {
 		jsonData, err := os.ReadFile("./products/" + f.Name())
