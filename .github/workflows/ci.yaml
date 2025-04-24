@@ -86,7 +86,7 @@ jobs:
             git config --global user.email "ravish142000@gmail.com"
             git add kubernetes/productcatalog/deploy.yaml
             git commit -m "[CI]Update image tag to ${{ github.sha }}"
-            git push 
+            git push origin HEAD:main
         
         
 
