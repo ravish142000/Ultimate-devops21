@@ -84,6 +84,7 @@ jobs:
           run: |
             git config --global user.name "ravish142000"
             git config --global user.email "ravish142000@gmail.com"
+            git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/ravish142000/Ultimate-devops21.git
             git add kubernetes/productcatalog/deploy.yaml
             git commit -m "[CI]Update image tag to ${{ github.sha }}"
             git push origin HEAD:main
