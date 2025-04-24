@@ -82,8 +82,8 @@ jobs:
          
         - name: Commit and push changes
           run: |
-            git config --local user.name "ravish142000"
-            git config --local user.email "ravish142000@gmail.com"
+            git config --global user.name "ravish142000"
+            git config --global user.email "ravish142000@gmail.com"
             git add kubernetes/productcatalog/deploy.yaml
             git commit -m "[CI]Update image tag to ${{ github.sha }}"
             git push 
